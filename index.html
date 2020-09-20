@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/css/index.css">
     <script src="https://kit.fontawesome.com/9f4eabbd1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header container">
+    <header class="header container">
         <div class="header-left">
             <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="logo">Bran<span>d</span></a>
             <form method="get" class="header__search">
@@ -17,21 +17,87 @@
             </form>
         </div>
         <div class="header-right">
-            <img src="img/cart.svg" alt="cart">
-            <a href="#">My account <i class="fas fa-caret-down"></i></a>
+            <a class="header-right-img" href="#"><img src="img/cart.svg" alt="cart"></a>
+            <a class="header-right-button" href="#">My account <i class="fas fa-caret-down"></i></a>
         </div>
-    </div>
-<div class="header-line"></div>
-<div class="topNav">
-    <ul class="menu-list">
-        <li class="menu-item"><a href="#">Home</a></li>
-        <li class="menu-item"><a href="#">Man</a></li>
-        <li class="menu-item"><a href="#">Women</a></li>
-        <li class="menu-item"><a href="#">Kids</a></li>
-        <li class="menu-item"><a href="#">Accoseriese</a></li>
-        <li class="menu-item"><a href="#">Featured</a></li>
-        <li class="menu-item"><a href="#">Hot Deals</a></li>
-    </ul>
-</div>
+    <div class="header-line"></div>
+    </header>
+    <nav class="topNav">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">Man</a></li>
+            <li class="menu-item"><a href="#">Women</a></li>
+            <li class="menu-item"><a href="#">Kids</a></li>
+            <li class="menu-item"><a href="#">Accoseriese</a></li>
+            <li class="menu-item"><a href="#">Featured</a></li>
+            <li class="menu-item"><a href="#">Hot Deals</a></li>
+        </ul>
+    </nav>
+    <section class="sign">
+        <div class="sign__content container">
+            <div class="sign__content__left">
+                <h2>
+                    The brand
+                </h2>
+                <h4>
+                    of luxerious <span>fashion</span>
+                </h4>
+            </div>
+            <div class="sign__content__right">
+
+            </div>
+        </div>
+    </section>
+    <section class="category container">
+        <a href="#" class="category__a">
+        <div class="category__a__men">
+            <div class="category-sign">
+                <p class="category-sign__type">
+                    Hot deal
+                </p>
+                <p class="category-sign__name">
+                    For men
+                </p>
+            </div>
+        </div>
+        </a>
+        <a href="#" class="category__a">
+        <div class="category__a__accesories">
+            <div class="category-sign">
+                <p class="category-sign__type">
+                    Luxurious&Trendy
+                </p>
+                <p class="category-sign__name">
+                    Accesories
+                </p>
+            </div>
+        </div>
+        </a>
+        <a href="#" class="category__a">
+        <div class="category__a__women">
+            <div class="category-sign">
+                <p class="category-sign__type">
+                    30% offer
+                </p>
+                <p class="category-sign__name">
+                    Women
+                </p>
+            </div>
+        </div>
+        </a>
+        <a href="#" class="category__a">
+        <div class="category__a__kids">
+            <div class="category-sign">
+                <p class="category-sign__type">
+                   New arrivals
+                </p>
+                <p class="category-sign__name">
+                    For kids
+                </p>
+            </div>
+        </div>
+        </a>
+    </section>
+
 </body>
 </html>
