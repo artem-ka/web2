@@ -1,0 +1,134 @@
+@import "general";
+
+.sign{
+  width: 100%;
+  background: $bgColorImg;
+  margin-bottom: 98px;
+
+  &__content{
+    display: flex;
+    align-items: center;
+
+    &__left, &__right{
+      width: 50%;
+    }
+
+    &__left{
+      border-left: 12px solid $colorSelection;
+      padding-left: 12px;
+
+      h2, h4{
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      h2{
+        font-size: 60px;
+        letter-spacing: 1.5px;
+        line-height: 40px;
+        padding-bottom: 18px;
+        font-weight: 900;
+      }
+
+      h4{
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600;
+
+        span{
+          color: $colorSelection;
+        }
+      }
+    }
+
+    &__right{
+      min-height: 600px;
+      background-image: url("../../img/man_big.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.category{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 923px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+
+  &__a{
+
+    width: calc(50% - 10px);
+    font-size: 0;
+
+    &:nth-child(2n-1){
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(-n+2){
+      margin-right: 20px;
+    }
+
+   > div{
+      position: relative;
+    }
+
+    &:hover{
+      opacity: 0.5;
+    }
+
+    &__men, &__accesories, &__women, &__kids{
+      background-repeat: no-repeat;
+    }
+
+    &__men{
+      min-height: 542px;
+      background-image: url("../../img/category_men.jpg");
+    }
+
+    &__accesories{
+      min-height: 261px;
+      background-image: url("../../img/category_accessories.jpg");
+    }
+
+    &__women{
+      min-height: 261px;
+      background-image: url("../../img/category_women.jpg");
+    }
+
+    &__kids{
+      min-height: 542px;
+      background-image: url("../../img/category_kids.jpg");
+    }
+  }
+
+  &-sign{
+    background-color: #ffffff;
+    padding: 16px 19px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 26px;
+
+      &__type, &__name{
+        margin:0;
+        text-transform: uppercase;
+      }
+
+      &__type{
+        font-size: 18px;
+        color: $mainColor;
+        letter-spacing: 0.45px;
+        font-weight: 600;
+      }
+
+      &__name{
+        font-size: 30px;
+        color: $colorSelection;
+        letter-spacing: 0.75px;
+        font-weight: 900;
+      }
+  }
+}
+
