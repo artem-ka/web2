@@ -205,4 +205,145 @@ input, button {
       letter-spacing: 0.75px;
       font-weight: 900; }
 
+.featured {
+  margin-bottom: 113px; }
+  .featured__text {
+    margin-bottom: 60px;
+    text-align: center; }
+    .featured__text h3 {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.75px;
+      margin-bottom: 16px; }
+    .featured__text__description {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px; }
+  .featured__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 79px; }
+    .featured__items__item {
+      margin-right: 30px;
+      position: relative; }
+      .featured__items__item:nth-child(-n+4) {
+        margin-bottom: 60px; }
+      .featured__items__item:nth-child(4n) {
+        margin-right: 0; }
+      .featured__items__item__link {
+        display: block; }
+        .featured__items__item__link__title {
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-left: 14px; }
+        .featured__items__item__link__price {
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #f16d7f;
+          padding-left: 14px;
+          padding-bottom: 21px;
+          margin-bottom: 0; }
+      .featured__items__item__hover {
+        display: none; }
+        .featured__items__item__hover__add {
+          border: 1px solid #ffffff;
+          background: transparent;
+          color: #ffffff;
+          width: 123px;
+          height: 39px;
+          margin-top: 98px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 1; }
+          .featured__items__item__hover__add img {
+            margin-right: 8px; }
+          .featured__items__item__hover__add:hover {
+            cursor: pointer;
+            color: #f16d7f; }
+      .featured__items__item:hover > .featured__items__item__hover {
+        display: flex;
+        justify-content: center;
+        background: #3a3838;
+        width: 261px;
+        height: 280px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.75; }
+      .featured__items__item:hover > .featured__items__item__link {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+  .featured__linkToAll {
+    display: flex;
+    justify-content: center; }
+    .featured__linkToAll__a {
+      background-color: #f16d7f;
+      padding: 18px 18px 18px 24px;
+      box-sizing: border-box;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.4px; }
+
+.fa-long-arrow-alt-right {
+  font-size: 15px;
+  margin-left: 9px; }
+
+.offer {
+  margin-bottom: 97px;
+  display: flex;
+  min-height: 516px; }
+  .offer__left {
+    background-image: url("../../img/offer.jpg");
+    background-repeat: no-repeat;
+    padding-left: 39px;
+    padding-top: 146px;
+    box-sizing: border-box;
+    width: 67%; }
+    .offer__left__first {
+      font-size: 54px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      margin: 0; }
+      .offer__left__first span {
+        color: #f16d7f; }
+    .offer__left__second {
+      font-size: 32px;
+      letter-spacing: 0.9px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: 400; }
+  .offer__right {
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+    background-color: #222224;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    min-height: 100%; }
+    .offer__right__content {
+      color: #ffffff;
+      display: flex;
+      align-items: start; }
+      .offer__right__content__text {
+        margin-left: 33px; }
+        .offer__right__content__text h3 {
+          color: #fbfbfb;
+          font-size: 20px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          margin: 0; }
+        .offer__right__content__text__p {
+          color: #fbfbfb;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+          letter-spacing: 0.35px; }
+
 /*# sourceMappingURL=index.css.map */
