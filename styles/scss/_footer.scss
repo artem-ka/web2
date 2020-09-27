@@ -150,6 +150,10 @@
     width: 37%;
     box-sizing: border-box;
 
+    a:hover{
+      color: $mainColorHover;
+    }
+
     &__logo {
       font-size: 27px;
       font-weight: 300;
@@ -247,6 +251,7 @@
       line-height: 42px;
       letter-spacing: 0.4px;
       color: #7a7a7a;
+      text-transform: capitalize;
     }
 
     &__social{
