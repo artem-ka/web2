@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shopping cart</title>
-    <link rel="stylesheet" href="styles/css/shoppingCart.css">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles/css/checkout.css">
     <script src="https://kit.fontawesome.com/9f4eabbd1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -43,138 +43,68 @@
             </nav>
         </div>
     </section>
-    <section class="orderedGoods container">
-        <div class="orderedGoods__headers">
-            <div class="orderedGoods__headers__details">Product Details</div>
-            <div class="orderedGoods__headers__price">unite Price</div>
-            <div class="orderedGoods__headers__quantity">Quantity</div>
-            <div class="orderedGoods__headers__shipping">shipping</div>
-            <div class="orderedGoods__headers__subtotal">Subtotal</div>
-            <div class="orderedGoods__headers__action">ACTION</div>
-        </div>
-        <div class="orderedGoods__item">
-            <div class="orderedGoods__item__details">
-              <img src="img/ordered1.png">
-                <div class="orderedGoods__item__details__text">
-                    <h4>Mango  People  T-shirt</h4>
-                    <div class="orderedGoods__item__details__text__characteristics">
-                        <p>Color: <span>Red</span></p>
-                        <p>Size: <span>XII</span></p>
+    <section class="checkoutForms container">
+        <div class="checkoutForms__shippingAddress">
+            <a href="#" class="checkoutForms__a"><h2><span>01.</span>Shipping Adress</h2></a>
+            <div class="checkoutForms__shippingAddress__forms">
+                <form action="#" class="checkoutForms__shippingAddress__forms__form">
+                    <h4>Check as a guest or register</h4>
+                    <p class="checkoutForms__shippingAddress__forms__form__description">
+                        Register with us for future convenience
+                    </p>
+                    <label class="checkoutForms__shippingAddress__forms__form__label1">
+                        <input type="radio" name="register" value="checkout as guest">checkout as guest
+                    </label>
+                    <label class="checkoutForms__shippingAddress__forms__form__label1">
+                        <input type="radio" name="register" value="register" checked>register
+                    </label>
+                    <h4>register and save time!</h4>
+                    <p class="checkoutForms__shippingAddress__forms__form__description">
+                        Register with us for future convenience
+                    </p>
+                    <ul class="checkoutForms__shippingAddress__forms__form__ul">
+                        <li class="checkoutForms__shippingAddress__forms__form__ul__li">
+                            <i class="fas fa-angle-double-right"></i>Fast and easy checkout
+                        </li>
+                        <li class="checkoutForms__shippingAddress__forms__form__ul__li">
+                            <i class="fas fa-angle-double-right"></i>Easy access to your order history and status
+                        </li>
+                    </ul>
+                    <input type="submit" value="Continue">
+                </form>
+                <form action="#" class="checkoutForms__shippingAddress__forms__form">
+                    <h4>Already registed?</h4>
+                    <p class="checkoutForms__shippingAddress__forms__form__description">Please log in below</p>
+                    <label class="checkoutForms__shippingAddress__forms__form__label2">
+                        <p>EMAIL ADDRESS <span>*</span></p>
+                        <input type="email">
+                    </label>
+                    <label class="checkoutForms__shippingAddress__forms__form__label2">
+                        <p>PASSWORD<span>*</span></p>
+                        <input type="password">
+                    </label>
+                    <p class="checkoutForms__shippingAddress__forms__form__required">* Required Fileds</p>
+                    <div class="checkoutForms__shippingAddress__forms__form__submit">
+                        <input type="submit" value="Log in">
+                        <a href="#" class="checkoutForms__shippingAddress__forms__form__submit__forgot">Forgot Password ?</a>
                     </div>
-                </div>
-            </div>
-            <div class="orderedGoods__item__price">
-                <p>$150</p>
-            </div>
-            <div class="orderedGoods__item__quantity">
-                <form action="#">
-                    <input type="number" placeholder="2">
                 </form>
             </div>
-            <div class="orderedGoods__item__shipping">
-                <p>Free</p>
-            </div>
-            <div class="orderedGoods__item__subtotal">
-                <p>$300</p>
-            </div>
-            <div class="orderedGoods__item__action">
-                <a href="#"><i class="fas fa-times-circle"></i></a>
-            </div>
         </div>
-        <div class="orderedGoods__item">
-            <div class="orderedGoods__item__details">
-                <img src="img/ordered2.png">
-                <div class="orderedGoods__item__details__text">
-                    <h4>Mango  People  T-shirt</h4>
-                    <div class="orderedGoods__item__details__text__characteristics">
-                        <p>Color: <span>Red</span></p>
-                        <p>Size: <span>XII</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="orderedGoods__item__price">
-                <p>$150</p>
-            </div>
-            <div class="orderedGoods__item__quantity">
-                <form action="#">
-                    <input type="number" placeholder="2">
-                </form>
-            </div>
-            <div class="orderedGoods__item__shipping">
-                <p>Free</p>
-            </div>
-            <div class="orderedGoods__item__subtotal">
-                <p>$300</p>
-            </div>
-            <div class="orderedGoods__item__action">
-                <a href="#"><i class="fas fa-times-circle"></i></a>
-            </div>
+        <div class="checkoutForms__otherOptions">
+            <a href="#" class="checkoutForms__a"><h2><span>02.</span>BILLING INFORMATION</h2></a>
         </div>
-        <div class="orderedGoods__item">
-            <div class="orderedGoods__item__details">
-                <img src="img/ordered3.png">
-                <div class="orderedGoods__item__details__text">
-                    <h4>Mango  People  T-shirt</h4>
-                    <div class="orderedGoods__item__details__text__characteristics">
-                        <p>Color: <span>Red</span></p>
-                        <p>Size: <span>XII</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="orderedGoods__item__price">
-                <p>$150</p>
-            </div>
-            <div class="orderedGoods__item__quantity">
-                <form action="#">
-                    <input type="number" placeholder="2">
-                </form>
-            </div>
-            <div class="orderedGoods__item__shipping">
-                <p>Free</p>
-            </div>
-            <div class="orderedGoods__item__subtotal">
-                <p>$300</p>
-            </div>
-            <div class="orderedGoods__item__action">
-                <a href="#"><i class="fas fa-times-circle"></i></a>
-            </div>
+        <div class="checkoutForms__otherOptions">
+            <a href="#" class="checkoutForms__a"><h2><span>03.</span>SHIPPING INFORMATION</h2></a>
         </div>
-        <div class="orderedGoods__buttons">
-            <a href="#" class="orderedGoods__buttons__button">cLEAR SHOPPING CART</a>
-            <a href="#" class="orderedGoods__buttons__button">cONTINUE sHOPPING</a>
+        <div class="checkoutForms__otherOptions">
+            <a href="#" class="checkoutForms__a"><h2><span>04.</span>SHIPPING METHOD</h2></a>
         </div>
-    </section>
-    <section class="orderForms container">
-        <form action="#" class="orderForms__address">
-            <h3>Shipping Adress</h3>
-            <select>
-                <option>Bangladesh</option>
-                <option>India</option>
-                <option>Russia</option>
-                <option>USA</option>
-            </select>
-            <input type="text" placeholder="State">
-            <input type="number" placeholder="Postcode/Zip">
-            <input type="submit" value="Get a Quote">
-        </form>
-        <form action="#" class="orderForms__coupon">
-            <h3>coupon  discount</h3>
-            <p>Enter your coupon code if you have one</p>
-            <input type="text" placeholder="State">
-            <input type="submit" value="Apply coupon">
-        </form>
-        <div class="orderForms__total">
-            <div class="orderForms__total__subTotal">
-                <p>Sub total</p>
-                <p>$900</p>
-            </div>
-            <div class="orderForms__total__grandTotal">
-                <p>Grand Total</p>
-                <p>$900</p>
-            </div>
-            <a href="#" class="orderForms__total__checkout">
-                <div class="orderForms__total__checkout__a">proceed to checkout</div>
-            </a>
+        <div class="checkoutForms__otherOptions">
+            <a href="#" class="checkoutForms__a"><h2><span>05.</span>PAYMENT METHOD</h2></a>
+        </div>
+        <div class="checkoutForms__otherOptions">
+            <a href="#" class="checkoutForms__a"><h2><span>06.</span>ORDER REVIEW</h2></a>
         </div>
     </section>
     <section class="subscribe">
