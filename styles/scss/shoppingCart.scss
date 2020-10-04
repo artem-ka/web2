@@ -233,5 +233,191 @@
 }
 
 .orderForms{
-  
+  display: flex;
+  margin-bottom: 79px;
+
+  &__address{
+    width: 30%;
+    margin-right: 3%;
+
+    h3{
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    select{
+      min-height: 45px;
+      margin-bottom: 20px;
+      font-size: 13px;
+      font-weight: 300;
+      border: 1px solid #eaeaea;
+      width: 100%;
+      padding-left: 18px;
+      padding-right: 12px;
+      box-sizing: border-box;
+
+      &:focus{
+          outline: none;
+      }
+    }
+
+    input[type="text"]{
+      min-height: 45px;
+      width: 100%;
+      border: 1px solid #eaeaea;
+      font-size: 13px;
+      font-weight: 300;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+
+      &::placeholder{
+        color: #b1b1b1;
+      }
+    }
+
+    input[type="number"]{
+      min-height: 45px;
+      width: 100%;
+      border: 1px solid #eaeaea;
+      font-size: 13px;
+      font-weight: 300;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+
+      &::placeholder{
+        color: #b1b1b1;
+      }
+    }
+
+    input[type="submit"]{
+      padding: 12px 15px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #eaeaea;
+      }
+    }
+  }
+
+  &__coupon{
+    width: 30%;
+    margin-right: 3%;
+
+    h3{
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    p{
+      color: #000000;
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+
+    input[type="text"]{
+      min-height: 45px;
+      width: 100%;
+      border: 1px solid #eaeaea;
+      font-size: 13px;
+      font-weight: 400;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+
+      &::placeholder{
+        color: #b1b1b1;
+      }
+    }
+
+    input[type="submit"]{
+      padding: 12px 15px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #eaeaea;
+      }
+    }
+  }
+
+  &__total{
+    background-color: #f5f3f3;
+    width: 30%;
+    max-height: 80%;
+    padding: 3%;
+    box-sizing: border-box;
+
+    &__subTotal{
+      color: #4a4a4a;
+      font-size: 11px;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 14px;
+
+      p:first-child{
+        margin-right: 16px;
+      }
+    }
+
+    &__grandTotal{
+
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 22px;
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 17px;
+
+      p:first-child{
+        margin-right: 16px;
+      }
+
+      p:last-child{
+        color: $colorSelection;
+      }
+    }
+
+    &__checkout{
+      padding: 19px 40px;
+      background-color: $colorSelection;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover{
+        background-color: darken($colorSelection, 20%);
+      }
+
+      &__a{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
