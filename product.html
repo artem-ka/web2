@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Product</title>
-    <link rel="stylesheet" href="styles/css/checkout.css">
+    <link rel="stylesheet" href="styles/css/product.css">
     <script src="https://kit.fontawesome.com/9f4eabbd1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -43,8 +43,313 @@
         </nav>
     </div>
 </section>
-<section class="products">
-
+<section class="products container">
+    <div class="products__leftMenu">
+        <div class="products__leftMenu__item">
+            <a href="#" class="products__leftMenu__item__a products__leftMenu__item__a__active"><p>Category</p><i class="fas fa-caret-up"></i></a>
+        </div>
+        <ul class="products__leftMenu__ul">
+            <li class="products__leftMenu__ul__li"><a href="#">Accessories</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Bags</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Denim</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Hoodies & Sweatshirts</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Jackets & Coats</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Pants</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Polos</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Shirts</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Shoes</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Shorts</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Sweaters & Knits</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">T-Shirts</a></li>
+            <li class="products__leftMenu__ul__li"><a href="#">Tanks</a></li>
+        </ul>
+        <div class="products__leftMenu__item">
+            <a href="#" class="products__leftMenu__item__a"><p>BRAND</p><i class="fas fa-caret-down"></i></a>
+        </div>
+        <div class="products__leftMenu__item">
+            <a href="#" class="products__leftMenu__item__a"><p>dESIGNER</p><i class="fas fa-caret-down"></i></a>
+        </div>
+    </div>
+    <div class="products__right">
+    <div class="products__upForms">
+        <div class="products__upForms__trending">
+            <h3>Trending now</h3>
+            <ul class="products__upForms__trending__ul">
+                <li class="products__upForms__trending__ul__li"><a href="#">Bohemian</a></li>
+                <li class="products__upForms__trending__ul__li"><a href="#">Floral</a></li>
+                <li class="products__upForms__trending__ul__li"><a href="#">Lace</a></li>
+                <li class="products__upForms__trending__ul__li"><a href="#">Floral</a></li>
+                <li class="products__upForms__trending__ul__li"><a href="#">Lace</a></li>
+                <li class="products__upForms__trending__ul__li"><a href="#">Bohemian</a></li>
+            </ul>
+        </div>
+        <form action="#" class="products__upForms__size">
+            <h3>size</h3>
+            <div>
+            <p><input type="checkbox" name="size" value="xxs">XXS</p>
+            <p><input type="checkbox" name="size" value="xs">XS</p>
+            <p><input type="checkbox" name="size" value="s">S</p>
+            <p><input type="checkbox" name="size" value="m">M</p>
+            <p><input type="checkbox" name="size" value="l">L</p>
+            <p><input type="checkbox" name="size" value="xl">XL</p>
+            <p><input type="checkbox" name="size" value="xxl">XXL</p>
+            </div>
+        </form>
+        <form action="#" class="products__upForms__price">
+            <h3>pRICE</h3>
+            <input type="range" min="52" max="400" step="1" multiple>
+            <div class="products__upForms__price__rangeSign">
+                <p>$52</p>
+                <p>$400</p>
+            </div>
+        </form>
+    </div>
+    <form action="#" class="products__sort">
+        <p>Sort By</p>
+        <select>
+            <option>Name</option>
+            <option>price</option>
+            <option>date</option>
+        </select>
+        <p>Show</p>
+        <select>
+            <option>09</option>
+            <option>12</option>
+            <option>15</option>
+        </select>
+    </form>
+    <div class="products__items">
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item1.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item2.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item3.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item4.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item5.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item6.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item7.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item8.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+        <div class="products__items__item">
+            <div class="products__items__item__hover">
+                <a href="#" class="products__items__item__hover__add">
+                    <img src="img/cart_hover.svg" alt="cart_hover">Add to Cart
+                </a>
+                <a href="#" class="products__items__item__hover__round">
+                    <img src="img/round_hover.svg" alt="round_hover">
+                </a>
+                <a href="#" class="products__items__item__hover__like">
+                    <img src="img/like_hover.svg" alt="like_hover">
+                </a>
+            </div>
+            <div class="products__items__item__img">
+                <img src="img/products_item9.png" alt="products_item1">
+            </div>
+            <a href="#" class="products__items__item__link">
+                <p class="products__items__item__link__title">Mango  People  T-shirt</p>
+                <p class="products__items__item__link__price">$52.00</p>
+            </a>
+        </div>
+    </div>
+    <div class="products__pagination">
+        <div class="products__pagination__links">
+            <a href="#" class="products__pagination__links__arrowLeft"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="products__pagination__links__number products__pagination__links__number__active">1</a>
+            <a href="#" class="products__pagination__links__number">2</a>
+            <a href="#" class="products__pagination__links__number">3</a>
+            <a href="#" class="products__pagination__links__number">4</a>
+            <a href="#" class="products__pagination__links__number">5</a>
+            <a href="#" class="products__pagination__links__number">6</a>
+            <span>......</span>
+            <a href="#" class="products__pagination__links__number">20</a>
+            <a href="#" class="products__pagination__links__arrowRight"><i class="fas fa-chevron-right"></i></a>
+        </div>
+        <a href="#" class="products__pagination__all">View All</a>
+    </div>
+    </div>
+</section>
+<section class="options">
+    <div class="options__content container">
+        <div class="options__content__block">
+            <img src="img/delivery.svg" alt="delivery">
+            <div class="options__content__block__text">
+                <h3>Free Delivery</h3>
+                <p class="options__content__block__text__p">
+                    Worldwide delivery on all.
+                    Authorit tively morph next-generation innov tion with extensive models.
+                </p>
+            </div>
+        </div>
+        <div class="options__content__block">
+            <img src="img/discount.svg" alt="discount">
+            <div class="options__content__block__text">
+                <h3>Sales & discounts</h3>
+                <p class="options__content__block__text__p">
+                    Worldwide delivery on all.
+                    Authorit tively morph next-generation innov tion with extensive models.
+                </p>
+            </div>
+        </div>
+        <div class="options__content__block">
+            <img src="img/assurance.svg" alt="assurance">
+            <div class="options__content__block__text">
+                <h3>Quality assurance</h3>
+                <p class="options__content__block__text__p">
+                    Worldwide delivery on all.
+                    Authorit tively morph next-generation innov tion with extensive models.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="subscribe">
     <div class="subscribe__div container">
